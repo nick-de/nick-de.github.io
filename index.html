@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title>Welcome to my site!</title>
+<title>Welcome!</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -86,7 +86,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -235,6 +234,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -246,18 +246,6 @@ $(document).ready(function () {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -304,14 +292,13 @@ $(document).ready(function () {
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-gear"></span>
      
-    More
+    Posts
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-    <li class="dropdown-header">Messing Around</li>
     <li>
-      <a href="knitR_example.html">knitrBootstrap Example</a>
+      <a href="blog.html">Blog Posts</a>
     </li>
   </ul>
 </li>
@@ -339,13 +326,18 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Welcome to my site!</h1>
+<h1 class="title toc-ignore">Welcome!</h1>
 
 </div>
 
 
-<p>Hello there, I’m Nick. You can learn more about me in the <a href="./about.html">about</a> page.</p>
-<p>I have been wanting to use/take advantage of a GitHub pages site for quite some time. Mostly to learn about new technologies, and get some presence on the web that I can call my own. This site is presently generated with <a href="https://rmarkdown.rstudio.com/">rmarkdown</a>, and it has been a pleasure to tinker with. I would eventually like to transition to a blogdown site with a crisp looking Hugo theme (also granted I work up some courage to write blog posts).</p>
+<ul>
+<li><p>Hello there, I’m Nick. You can learn more about me in the <a href="./about.html">about</a> page.</p></li>
+<li><p>There is a link hub to stuff I have written <a href="./blog.html">here</a>.</p></li>
+<li><p>I am taking advantage of a GitHub Pages site to learn about new technologies, and get some presence on the web that I can call my own. This site is generated with <a href="https://rmarkdown.rstudio.com/">R Markdown</a>, and I much appreciate the package’s ease of use to put together a static site.</p></li>
+</ul>
+<p><br /></p>
+<p><img src="weave-rkt.svg" style="display: block; margin: auto;" /></p>
 
 
 
@@ -364,6 +356,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
