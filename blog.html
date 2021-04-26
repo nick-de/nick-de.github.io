@@ -26,6 +26,15 @@
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link href="site_libs/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -70,6 +79,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -276,21 +286,21 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">
-    <span class="fa fa-home"></span>
+    <span class="fas fa-home"></span>
      
     Home
   </a>
 </li>
 <li>
   <a href="about.html">
-    <span class="fa fa-info"></span>
+    <span class="fas fa-info"></span>
      
     About
   </a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-gear"></span>
+    <span class="fas fa-gear"></span>
      
     Posts
      
@@ -333,6 +343,12 @@ $(document).ready(function () {
 
 <p>Here are links to my “blog”. It is actually more like utilizing GitHub’s gists as a writing/publishing platform while I collect them here. It should work pretty well for my intentions, as it provides space where I can reflect through writing, and even a comment section.</p>
 <div id="section" class="section level3">
+<h3>2021</h3>
+<ul>
+<li><strong>2021-04-26</strong> <a href="https://gist.github.com/nick-de/c6442e06c2e214d8570148680e6ff090">Searching for Strange Attractors</a></li>
+</ul>
+</div>
+<div id="section-1" class="section level3">
 <h3>2020</h3>
 <ul>
 <li><p><strong>2020-10-06</strong> <a href="https://gist.github.com/nick-de/e1eae04e5a6e30d922ff077103c0ef6f">Flattened animation as a story</a></p></li>
@@ -349,7 +365,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
